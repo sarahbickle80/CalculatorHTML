@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Basic Calculator</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <P><b><i>Please Input Some Numbers:</i></b></P>
+    <input id="txtNum1" type="text" placeholder="Number1" /><br/><br/><br />
+    <input id="txtNum2" type="text" placeholder="Number2" /><br/><br /><br />
+    <input id="btnTotal" type="button" value="Total" onclick="btnTotal_onclick()"/><br/><br /><br />
+    <h2>Addition:</h2>
+    <p id="parResultAdd"></p><br /><br /><br />
+    <h3>Takeaway:</h3>
+    <p id="parResultTake"></p><br /><br /><br />
+    <h4>Multiply:</h4>
+    <p id="parResultTimes"></p><br /><br /><br />
+    <h5>Divide:</h5>
+    <p id="parResultDivide"></p><br /><br /><br />
+</body>
+</html>
+<script language="javascript">
+    function btnTotal_onclick() {
+        parResultAdd.innerText = parseFloat(txtNum1.value) + parseFloat(txtNum2.value);
+        parResultTake.innerText = parseFloat(txtNum1.value) - parseFloat(txtNum2.value);
+        parResultTimes.innerText = parseFloat(txtNum1.value) * parseFloat(txtNum2.value);
+        parResultDivide.innerText = parseFloat(txtNum1.value) / parseFloat(txtNum2.value);
+    }
+
+ 
+</script>
